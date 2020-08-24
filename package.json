@@ -1,6 +1,6 @@
 {
   "name": "@quickapp-eco/cloudbase-adapter-quickapp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "quickapp adapter of cloudbase javascript SDK",
   "main": "src/index.js",
   "scripts": {
