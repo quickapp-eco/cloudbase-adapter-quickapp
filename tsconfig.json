@@ -1,28 +1,17 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "declaration": false,
-    "esModuleInterop": true,
-    "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
-    "module": "commonjs",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "rootDir": "src",
-    "pretty": true,
-    "removeComments": true,
-    "skipLibCheck": true,
-    "strictBindCallApply": true,
+    "noImplicitAny": false, // 为 false 时，如果编译器无法根据变量的使用来判断类型时，将用 any 类型代替。为 true 时，进行强类型检查，会报错
+    "module": "es6",
     "target": "es5",
-    "moduleResolution": "node",
-    "lib": ["es2015", "dom"]
+    "allowJs": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+    "lib": [
+        "ES2016",
+        "DOM"
+    ]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
